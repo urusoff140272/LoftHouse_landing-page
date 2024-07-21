@@ -1,0 +1,16 @@
+.top {
+    background-image: linear-gradient(
+        180deg,
+        rgb(36, 43, 51) 11.979%,
+        rgba(45, 52, 60, 0.38) 51.042%,
+        rgb(36, 43, 51) 92.188%
+    );
+
+    &__image{
+        padding-top: 43.75%;
+    }
+
+    &__img{
+        z-index: -1;
+    }
+}

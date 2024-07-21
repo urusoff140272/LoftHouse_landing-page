@@ -4,14 +4,14 @@ html {
 }
 
 body {
-    @include adaptive-font(18, 16);
+    @include adaptive-font(16, 14);
 
-    background-color: rgb(243, 243, 236);
-
-    font-family: var(--font-family-base);
+    font-family: var(--base-family);
     font-weight: 400;
-    line-height: 1.28;
-    color: var(--coloi-black);
+    line-height: calc(24 / 16);
+
+    background-color: var(--color-dark);
+    color: var(--color-ligth);
 }
 
 a,
@@ -22,16 +22,26 @@ svg * {
     transition-duration: var(--transition-duration);
 }
 
-h1, .h1 {
-    @include adaptive-font(60, 43)
+a{
+    @include hover{
+        color: var(--color-accent);
+    }
 }
-h2, .h2 {
+
+h1,
+.h1 {
+    @include adaptive-font(60, 43);
+}
+h2,
+.h2 {
     @include adaptive-font(40, 36);
 }
-h3, .h3 {
+h3,
+.h3 {
     @include adaptive-font(30, 26);
 }
-h4, .h4 {
+h4,
+.h4 {
     @include adaptive-font(20, 18);
 }
 
@@ -82,4 +92,3 @@ h4, .h4 {
         display: none !important;
     }
 }
-

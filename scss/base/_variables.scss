@@ -1,36 +1,37 @@
 :root {
-    --color-black: #000000;
-    --color-dark: #191a23;
-    --color-dark-alt: #292a32;
+    // -------fonts---------
+    --base-family: "Raleway", sans-serif;
+    --second-family: "Playfair Display", serif;
+    --third-family: "Roboto", sans-serif;
+
+    // --------colors--------
+    --color-dark: #242b33;
+    --color-accent: #d4c17f;
     --color-ligth: #ffffff;
-    --color-accent: #b9ff66;
-    --color-grey: #f3f3f3;
-    --color-grey-alt: #898989;
+    --coior-footer-bg: #2d343c;
 
-    --border: 1px solid var(--color-dark);
-    --border-radius: 14px;
-    --border-radius-small: 7px;
-    --border-radius-large: 45px;
+    --container-width: 1110px;
+    --container-padding-x: 15px;
 
-    --shadow: 0 5px 0 0 var(--color-dark);
+    --transition-duration: 0.3s;
 
-    --font-family-base: "Space Grotesk", sans-serif;
+    // --border: 1px solid var(--color-dark);
+    // --border-radius: 14px;
+    // --border-radius-small: 7px;
+    // --border-radius-large: 45px;
 
-    --container-width: 1240px;
-    --container-padding-x: 20px;
+    // --shadow: 0 5px 0 0 var(--color-dark);
 
-    --section-padding-y: 70px;
+    // --section-padding-y: 70px;
 
-    --input-height: 59px;
-    --button-height: 68px;
+    // --input-height: 59px;
+    // --button-height: 68px;
 
-    --transition-duration: 0.2s;
+    // @include tablet {
+    //     --section-padding-y: 50px;
+    // }
 
-    @include tablet {
-        --section-padding-y: 50px;
-    }
-
-    @include mobile {
-        --section-padding-y: 30px;
-    }
+    // @include mobile {
+    //     --section-padding-y: 30px;
+    // }
 }

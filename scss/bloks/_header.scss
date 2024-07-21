@@ -1,0 +1,24 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    padding-block: 42px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        column-gap: 30px;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 40px;
+    }
+
+    &__item {
+        font-size: 14px;
+        letter-spacing: 0.035em;
+        line-height: calc(16 / 14);
+    }
+}
