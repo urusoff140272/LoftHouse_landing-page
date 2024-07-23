@@ -1,8 +1,7 @@
 // ----base---
-@import "./base/normalize", "./base/fonts", "./base/mixins", "./base/media", "./base/variables", "./base/base";
+@import "./base/normalize", "./base/fonts", "./base/mixins", "./base/media", "./base/variables", "./base/base", "./base/grid";
 
 // ----blocks---
-@import "./bloks/main";
 @import "./bloks/top";
 @import "./bloks/header";
 @import "./bloks/logo";

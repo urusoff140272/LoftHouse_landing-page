@@ -1,4 +1,5 @@
 .top {
+    position: relative;
     background-image: linear-gradient(
         180deg,
         rgb(36, 43, 51) 11.979%,
@@ -6,11 +7,41 @@
         rgb(36, 43, 51) 92.188%
     );
 
-    &__image{
-        padding-top: 43.75%;
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
-    &__img{
+    &__img {
         z-index: -1;
+    }
+
+    &__bpdy {
+        max-width: 610px;
+        margin-inline: auto;
+        padding-top: 296px;
+        padding-bottom: 70px;
+    }
+
+    &__link {
+        display: block;
+        color: var(--color-accent);
+        text-align: center;
+        margin-top: 81px;
+        margin-bottom: 190px;
+    }
+
+    &__footer{
+        font-size: 18px;
+        column-gap: 98px;
+        color: var(--color-accent);
+
+        &-info{
+            display: flex;
+            column-gap: 14px;
+        }
     }
 }

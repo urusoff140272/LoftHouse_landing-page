@@ -30,7 +30,12 @@ a{
 
 h1,
 .h1 {
-    @include adaptive-font(60, 43);
+    @include adaptive-font(43.5, 30);
+
+    text-align: center;
+    font-family: var(--second-family);
+    color: var(--color-accent);
+    line-height: calc(64 / 48);
 }
 h2,
 .h2 {
