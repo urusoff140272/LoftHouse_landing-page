@@ -9,10 +9,4 @@
             --gridColumns: #{$i};
         }
     }
-
-    &_2 {
-        @include tablet {
-            --gridColumns: 1;
-        }
-    }
 }

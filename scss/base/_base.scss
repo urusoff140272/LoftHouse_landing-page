@@ -22,8 +22,8 @@ svg * {
     transition-duration: var(--transition-duration);
 }
 
-a{
-    @include hover{
+a {
+    @include hover {
         color: var(--color-accent);
     }
 }
@@ -32,7 +32,6 @@ h1,
 .h1 {
     @include adaptive-font(43.5, 30);
 
-    text-align: center;
     font-family: var(--second-family);
     color: var(--color-accent);
     line-height: calc(64 / 48);
@@ -96,4 +95,46 @@ h4,
     @include mobile-above {
         display: none !important;
     }
+}
+
+.header__burger {
+    position: relative;
+    width: 30px;
+    height: 18px;
+
+    &-icon,
+    &::after,
+    &::before {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        background-color: var(--color-ligth);
+        transition: var(--transition-duration);
+    }
+    &::before {
+        content: "";
+        top: 0;
+    }
+    &::after {
+        content: "";
+        bottom: 0;
+    }
+    &-icon {
+        top: 50%;
+        transform: scale(1) translateY(-50%);
+    }
+}
+.header__burger.active{
+    .header__burger-icon {
+        transform: scale(0) translateY(-50%);
+    }
+}
+.header__burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+}
+.header__burger.active::after{
+    top: 50%;
+    transform: rotate(45deg) translateY(-50%);
 }

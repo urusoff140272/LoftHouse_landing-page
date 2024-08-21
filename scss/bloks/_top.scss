@@ -7,41 +7,57 @@
         rgb(36, 43, 51) 92.188%
     );
 
-    &__image {
+    &__bg {
         position: absolute;
         top: 0;
         left: 0;
+        z-index: -1;
         width: 100%;
         height: 100%;
     }
 
-    &__img {
-        z-index: -1;
+    &__inner {
+        min-height: 840px;
+        padding-top: 292px;
+        padding-bottom: 74px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    &__bpdy {
-        max-width: 610px;
-        margin-inline: auto;
-        padding-top: 296px;
-        padding-bottom: 70px;
-    }
-
-    &__link {
-        display: block;
-        color: var(--color-accent);
+    &__title {
         text-align: center;
-        margin-top: 81px;
-        margin-bottom: 190px;
     }
 
-    &__footer{
-        font-size: 18px;
-        column-gap: 98px;
-        color: var(--color-accent);
+    &__link-next {
+        @include flex-center;
+        @include square(50px);
+        @include hover {
+            color: var(--color-ligth);
+        }
 
-        &-info{
+        color: var(--color-accent);
+        margin-inline: auto;
+        margin-bottom: 115px;
+    }
+
+    &__footer {
+        font-size: 18px;
+        line-height: 0.3;
+        gap: 98px;
+
+        &-info {
             display: flex;
-            column-gap: 14px;
+            column-gap: 16px;
+            align-items: center;
+
+            @include hover {
+                color: var(--color-accent);
+            }
+
+            &_right {
+                margin-left: auto;
+            }
         }
     }
 }

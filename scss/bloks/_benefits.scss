@@ -1,0 +1,27 @@
+.benefits {
+    padding: 120px 0;
+
+    &__inner {
+        max-width: 805px;
+        margin-inline: auto;
+    }
+
+    &__item {
+        text-align: center;
+
+        &_right{
+            padding-left: 65px;
+        }
+    }
+
+    &__image{
+        margin-bottom: 53px;
+    }
+
+    &__text{
+        font-family: var(--third-family);
+        font-size: 20px;
+        line-height: 1.35;
+        font-weight: 300;
+    }
+}
