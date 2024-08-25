@@ -1,5 +1,5 @@
-.form{
-    &__input{
+.form {
+    &__input {
         min-height: 50px;
         padding: 12px;
         text-align: center;
@@ -7,16 +7,18 @@
         color: var(--color-ligth);
         font-size: 14px;
         line-height: 1.93;
+        transition: background var(--transition-duration);
 
-        &::placeholder{
+        &::placeholder {
             color: var(--color-placeholder);
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 1.93;
+        }
+
+        &:focus {
+            background: rgba(255, 255, 255, 0.25);
         }
     }
 
-    &__button{
+    &__button {
         min-height: 50px;
         padding: 12px;
         text-align: center;
@@ -24,9 +26,14 @@
         color: var(--color-ligth);
         font-size: 16px;
         font-weight: 700;
+        transition: background var(--transition-duration);
+
+        @include hover {
+            background: saturate(#d4c17f, 30%);
+        }
     }
 
-    &__privacy{
+    &__privacy {
         color: var(--color-privacy);
         font-size: 13px;
         line-height: 1.23;

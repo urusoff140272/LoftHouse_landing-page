@@ -1,5 +1,37 @@
 .footer {
-    &__text {
-        color: #fff;
+    padding-top: 70px;
+    padding-bottom: 45px;
+    
+    &__inner{
+        gap: 30px;
+    }
+
+    &__menu{
+        & >*:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list{
+        & >*:not(:last-child){
+            margin-bottom: 15px;
+        }
+    }
+
+    &__item {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        line-height: calc(16 / 14);
+    }
+
+    &__link_accent{
+        font-weight: 700;
+        color: var(--color-accent);
+    }
+
+    &__socials{
+        display: flex;
+        gap: 22px;
+        align-items: center;
     }
 }

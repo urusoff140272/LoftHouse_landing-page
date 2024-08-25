@@ -1,0 +1,13 @@
+.feedBack{
+    padding-bottom: 180px;
+
+    &__title{
+        margin-bottom: 38px;
+        line-height: 1.4;
+    }
+
+    &__form{
+        gap: 30px;
+        align-items: center;
+    }
+}

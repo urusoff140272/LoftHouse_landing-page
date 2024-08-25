@@ -1,0 +1,38 @@
+.video {
+    text-align: center;
+
+    &__link {
+        display: inline-block;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(36, 43, 51, 0.8);
+            transition: background var(--transition-duration);
+        }
+
+        @include hover {
+            &::before {
+                background: rgba(36, 43, 51, 0.6);
+            }
+
+            .video__icon {
+                transform: translate(-50%, -50%) scale(1.2);
+                filter: saturate(1.5);
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all var(--transition-duration);
+    }
+}

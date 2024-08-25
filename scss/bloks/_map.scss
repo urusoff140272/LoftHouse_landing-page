@@ -1,0 +1,13 @@
+.map{
+    padding: 180px 0;
+
+    &__title{
+        margin-bottom: 88px;
+        line-height: 1.25;
+    }
+
+    &__map{
+        height: 358px;
+        background-color: var(--color-placeholder);
+    }
+}
