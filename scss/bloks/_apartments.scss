@@ -1,0 +1,14 @@
+.apartments {
+    &__title {
+        margin-bottom: 93px;
+    }
+
+    &__cards {
+        column-gap: 30px;
+        row-gap: 30px;
+
+        @include tablet {
+            --gridColumns: 1;
+        }
+    }
+}

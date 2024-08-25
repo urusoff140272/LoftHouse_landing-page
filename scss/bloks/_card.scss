@@ -1,0 +1,58 @@
+.card {
+    &__link {
+        @include hover {
+            color: var(--color-ligth);
+            &::after {
+                opacity: 1;
+            }
+
+            .card__image {
+                transform: scale(1.1);
+                filter: contrast(1.1) brightness(1.2) saturate(1.2);
+            }
+        }
+
+        position: relative;
+        display: block;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 5;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, var(--color-dark) 100%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 6;
+            left: 12px;
+            top: 15px;
+            right: 15px;
+            bottom: 15px;
+            border: 3px double rgba(255, 255, 255, 0.4);
+            opacity: 0;
+            transition: opacity var(--transition-duration);
+        }
+    }
+
+    &__title {
+        position: absolute;
+        z-index: 9;
+        left: 50px;
+        right: 20px;
+        bottom: 46px;
+    }
+
+    &__image{
+        position: relative;
+        width: 100%;
+        z-index: 4;
+        transition: all var(--transition-duration);
+    }
+}
