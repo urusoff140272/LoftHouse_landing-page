@@ -1,6 +1,13 @@
 .feedBack{
     padding-bottom: 180px;
 
+    @include tablet{
+        padding-bottom: 145px;
+    }
+    @include mobile{
+        padding-bottom: 90px;
+    }
+
     &__title{
         margin-bottom: 38px;
         line-height: 1.4;
@@ -9,5 +16,13 @@
     &__form{
         gap: 30px;
         align-items: center;
+
+        @include tablet{
+            --gridColumns: 2;
+        }
+
+        @include mobile{
+            --gridColumns: 1;
+        }
     }
 }

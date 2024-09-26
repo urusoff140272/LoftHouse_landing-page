@@ -9,6 +9,10 @@
     ),
     linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9));
 
+    @include tablet{
+        padding: 90px 0;
+    }
+
     &__bg {
         position: absolute;
         top: 0;
@@ -25,6 +29,10 @@
 
     &__inner{
         gap: 30px;
+
+        @include tablet{
+            --gridColumns: 1;
+        }
     }
 
     &__text{
@@ -33,11 +41,19 @@
         :not(:last-child){
             margin-bottom: 1em;
         }
+
+        @include mobile{
+            font-size: 14px;
+        }
     }
 
     &__form{
         column-gap: 30px;
         row-gap: 35px;
         align-items: center;
+
+        @include mobile{
+            --gridColumns: 1;
+        }
     }
 }

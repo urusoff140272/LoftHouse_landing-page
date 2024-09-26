@@ -5,7 +5,6 @@ const iconBurger = document.querySelector('.header__burger');
 const menuHeader = document.querySelector('.header__menu');
 const headerLinks = document.querySelectorAll('.header__link');
 
-
 if (iconBurger) {
     iconBurger.addEventListener('click', openMenu);
 }

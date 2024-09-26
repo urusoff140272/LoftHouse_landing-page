@@ -1,14 +1,31 @@
 .footer {
     padding-top: 70px;
     padding-bottom: 45px;
+
+    @include tablet{
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
     
     &__inner{
-        gap: 30px;
+        gap: 40px 30px;
+
+        @include tablet{
+            --gridColumns: 2;
+        }
+
+        @include mobile{
+            --gridColumns: 1;
+        }
     }
 
     &__menu{
         & >*:not(:last-child){
             margin-bottom: 20px;
+        }
+
+        @include mobile{
+            text-align: center;
         }
     }
 
@@ -33,5 +50,10 @@
         display: flex;
         gap: 22px;
         align-items: center;
+
+        @include mobile{
+            display: inline-flex;
+            margin: 0 auto;
+        }
     }
 }

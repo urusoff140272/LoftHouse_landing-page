@@ -38,5 +38,13 @@
         font-size: 13px;
         line-height: 1.23;
         text-align: center;
+
+        @include tablet {
+            grid-row: 2/3;
+        }
+
+        @include mobile {
+            grid-row: 4/5;
+        }
     }
 }

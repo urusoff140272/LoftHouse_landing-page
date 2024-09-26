@@ -1,12 +1,35 @@
-.map{
+.map {
+    position: relative;
     padding: 180px 0;
 
-    &__title{
-        margin-bottom: 88px;
-        line-height: 1.25;
+    @include tablet{
+        padding: 120px 0;
+    }
+    @include mobile{
+        padding: 70px 0;
     }
 
-    &__map{
+    &::before {
+        @include decorNumber;
+        content: "V";
+        right: calc(50% + 555px);
+        translate: 50% 0;
+        line-height: 1.89;
+    }
+
+    &__title {
+        margin-bottom: 88px;
+        line-height: 1.25;
+
+        @include tablet{
+            margin-bottom: 60px;
+        }
+        @include mobile{
+            margin-bottom: 44px;
+        }
+    }
+
+    &__map {
         height: 358px;
         background-color: var(--color-placeholder);
     }

@@ -47,9 +47,17 @@
         left: 50px;
         right: 20px;
         bottom: 46px;
+
+        @include tablet {
+            bottom: 30px;
+        }
+
+        @include mobile-s {
+            bottom: 20px;
+        }
     }
 
-    &__image{
+    &__image {
         position: relative;
         width: 100%;
         z-index: 4;

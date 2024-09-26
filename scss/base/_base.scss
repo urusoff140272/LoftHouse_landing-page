@@ -14,6 +14,10 @@ body {
     color: var(--color-ligth);
 }
 
+body.lock{
+    overflow-y: hidden;
+}
+
 a,
 button,
 input,
@@ -47,7 +51,7 @@ h2,
 }
 h3,
 .h3 {
-    @include adaptive-font(22.5, 18);
+    @include adaptive-font(22.5, 16);
     font-weight: 400;
     line-height: 1;
 }
@@ -59,7 +63,7 @@ h4,
 .wrapper {
     min-height: 100%;
     // * {
-    //     outline: 2px solid green !important;
+    //     outline: 1px solid green !important;
     // }
     overflow: hidden;
     display: flex;
@@ -94,13 +98,13 @@ h4,
 
 .hidden-mobile {
     @include mobile {
-        display: none !important;
+        display: none;
     }
 }
 
 .visible-mobile {
     @include mobile-above {
-        display: none !important;
+        display: none;
     }
 }
 

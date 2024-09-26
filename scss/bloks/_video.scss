@@ -1,5 +1,15 @@
 .video {
     text-align: center;
+    position: relative;
+
+    &::after{
+        @include decorNumber;
+        
+        content: 'IV';
+        left: calc(50% + 555px);
+        translate: -50% 0;
+        line-height: 1.52;
+    }
 
     &__link {
         display: inline-block;
@@ -34,5 +44,20 @@
         top: 50%;
         transform: translate(-50%, -50%);
         transition: all var(--transition-duration);
+
+        @include mobile{
+            width: 80px;
+            height: 80px;
+        }
+
+        @include mobile-s{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        height: auto;
     }
 }
