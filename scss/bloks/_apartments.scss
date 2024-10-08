@@ -1,0 +1,30 @@
+.apartments {
+    position: relative;
+
+    &::before{
+        @include decorNumber;
+        
+        content: 'III';
+        right: calc(50% + 555px);
+        translate: 50% 0;
+        line-height: 0.95;
+    }
+
+    &__title {
+        margin-bottom: 93px;
+
+        @include tablet{
+            margin-bottom: 50px;
+        }
+    }
+
+    &__cards {
+        column-gap: 30px;
+        row-gap: 30px;
+
+        @include mobile {
+            --gridColumns: 1;
+        }
+    }
+}
+

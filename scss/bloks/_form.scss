@@ -1,0 +1,50 @@
+.form {
+    &__input {
+        min-height: 50px;
+        padding: 12px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.2);
+        color: var(--color-ligth);
+        font-size: 14px;
+        line-height: 1.93;
+        transition: background var(--transition-duration);
+
+        &::placeholder {
+            color: var(--color-placeholder);
+        }
+
+        &:focus {
+            background: rgba(255, 255, 255, 0.25);
+        }
+    }
+
+    &__button {
+        min-height: 50px;
+        padding: 12px;
+        text-align: center;
+        background: var(--color-accent);
+        color: var(--color-ligth);
+        font-size: 16px;
+        font-weight: 700;
+        transition: background var(--transition-duration);
+
+        @include hover {
+            background: saturate(#d4c17f, 30%);
+        }
+    }
+
+    &__privacy {
+        color: var(--color-privacy);
+        font-size: 13px;
+        line-height: 1.23;
+        text-align: center;
+
+        @include tablet {
+            grid-row: 2/3;
+        }
+
+        @include mobile {
+            grid-row: 4/5;
+        }
+    }
+}

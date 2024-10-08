@@ -1,0 +1,10 @@
+.logo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    &__text{
+        font-size: 12px;
+        letter-spacing: 0.08em;
+    }
+}

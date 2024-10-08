@@ -1,0 +1,19 @@
+// ----base---
+@import "./base/normalize", "./base/fonts", "./base/mixins", "./base/media", "./base/variables", "./base/base", "./base/grid";
+
+// ----blocks---
+@import "./bloks/top";
+@import "./bloks/header";
+@import "./bloks/logo";
+@import "./bloks/benefits";
+@import "./bloks/apartments";
+@import "./bloks/card";
+@import "./bloks/cta";
+@import "./bloks/form";
+@import "./bloks/video";
+@import "./bloks/map";
+@import "./bloks/feedBack";
+
+
+
+@import "./bloks/footer";
