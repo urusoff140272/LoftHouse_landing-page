@@ -49,3 +49,8 @@ phoneInputs.forEach((input)=>{
 });
 
 
+// ----------------map--------------
+var map = null;
+function init() {
+    map = new MetaMapsOL.Map('map');
+}
