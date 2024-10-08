@@ -2,10 +2,10 @@
     position: relative;
     padding: 180px 0;
 
-    @include tablet{
+    @include tablet {
         padding: 120px 0;
     }
-    @include mobile{
+    @include mobile {
         padding: 70px 0;
     }
 
@@ -21,10 +21,10 @@
         margin-bottom: 88px;
         line-height: 1.25;
 
-        @include tablet{
+        @include tablet {
             margin-bottom: 60px;
         }
-        @include mobile{
+        @include mobile {
             margin-bottom: 44px;
         }
     }
@@ -32,5 +32,8 @@
     &__map {
         height: 358px;
         background-color: var(--color-placeholder);
+        // background: none repeat scroll 0 0 var(--color-placeholder);
+
+        cursor: move;
     }
 }
