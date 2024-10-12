@@ -1047,6 +1047,17 @@ h3,
   cursor: move;
 }
 
+.olMetaCopyrights {
+  opacity: 0;
+}
+
+.popupContent {
+  padding: unset !important;
+  width: 160px !important;
+  color: var(--color-dark) !important;
+  text-align: center;
+}
+
 .feedBack {
   padding-bottom: 180px;
 }
